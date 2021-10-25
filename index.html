@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Bridge calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center" id="h11">Dowry calculator</h1> 
+                
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education" >
+                        <option value="blank"></option>
+                        <option value="bachelor">Bachelor's degree</option>
+                        <option value="college">College degree</option>
+                        <option value="high_school">High school degree</option>
+                        <option value="middle_school">Middle school degree</option>
+                    </select>
+                    <hr>
+                    <label for="family_networth">Family networth</label><br>
+                    <select id="networth" >
+                        <option value="blank"></option>
+                        <option value="upper_class">More than 100,000$</option>
+                        <option value="middle_class">Between 50,000$ and 100,000$</option>
+                        <option value="lower_class">Less than 50,000$</option>
+                    </select>
+                    <hr>
+                    <!-- CONTINUE YOUR ASSIGNMENT HERE!!! -->
+                    <label for="caste">Caste</label><br>
+                    <select id="caste" >
+                    <option value="blank"></option>
+                    <option value="brahmin">Brahmin</option>
+                    <option value="kshatriya">Kshatriya</option>
+                    <option value="vaishya">Vaishya</option>
+                    <option value="shudra">Shudra</option>
+                    <option value="varna">Varna-untouchable</option>
+                    </select>
+                    <hr>
+                    <label for="Bridge's_skills">Bridge's skills</label><br>
+                    <form id="Bridge_skills">
+                    <label for="skill1" id="skill1" name="skill">Playing on a musical instrument
+                    <input type="checkbox" id="skill1" value="10">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label for="skill2" id="skill2" name="skill">Good cook
+                    <input type="checkbox" id="skill2" value="20">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label for="skill3" id="skill3" name="skill">Easygoing character
+                    <input type="checkbox" id="skill3" value="15">
+                    <span class="checkmark" ></span>
+                    </label>
+                    <label for="skill4" id="skill4" name="skill">Sings well
+                        <input type="checkbox" id="skill4" value="10">
+                        <span class="checkmark" ></span>
+                        </label>
+                    <hr>
+                    <label for="Bridge's_age">Bridge's age</label><br>
+                    <form id="Bridge's_age">
+                    <input type="radio" id="age1">
+                    <label for="age1" id="age1" name="age1" >18-23</label>
+                    <input type="radio" id="age2">
+                    <label for="age2" id="age2" name="age1" >24-27</label>
+                    <input type="radio" id="age3">
+                    <label for="age3" id="age3" name="age1" >28+</label>
+                    </form>
+                    <hr>
+
+                    <label for="Bride's reputation">Bride's reputation</label><br>
+                    <form id="Bride's reputation">
+                    <label for="rep1">Gossips about his/her parent's attitude
+                    <input type="checkbox" id="rep1" name="rep">
+                    <span class="checkmark" ></span>
+                    </label><br>
+                    <label for="rep2">Gossips about his/her character
+                    <input type="checkbox" id="rep2" name="rep">
+                    <span class="checkmark" ></span>
+                    </label><br>
+                    <label for="rep3">General gossips around his/her person
+                    <input type="checkbox" id="rep3" name="rep">
+                    <span class="checkmark" ></span>
+                    </label><br>
+                    </form>
+                     <button id="submit" type="button" class="btn btn-primary">Calculate price</button>                  
+                     <button onClick="window.location.reload();" class="btn btn-primary" >Reset</button><br> <<!--DOM event-->
+                     <span id="sum"></span> <br>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
